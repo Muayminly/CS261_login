@@ -5,14 +5,18 @@
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    background: linear-gradient(135deg, #74ebd5, #9face6); /* Gradient background */
+    background-size: cover; /* Make the background cover the entire screen */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #333;
+    overflow: hidden; /* Prevent scrolling */
 }
 
 /* Container styling */
@@ -89,6 +93,7 @@ p#message {
     color: red;
 }
 
+/* Password visibility icon container */
 .password-container {
     position: relative;
     width: 100%;
@@ -107,23 +112,54 @@ p#message {
     color: #ccc;
 }
 
+/* Disabled button styling */
 button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
 }
 
+/* Show data section styling */
 .showdata {
-    margin-left: 100px;
-    background-color: #fff;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for a soft look */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 350px;
     text-align: left;
-    display: none;
-
-    p {
-        margin: 10px;
-    }
+    display: none; /* Hide until login */
 }
 
+/* Enhance show data content */
+.showdata h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.showdata p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.showdata strong {
+    font-weight: bold;
+}
+
+/* Optionally, add a subtle animation to the login form */
+.login-container {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Fade-in animation for the login form */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
