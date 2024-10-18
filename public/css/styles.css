@@ -107,3 +107,23 @@ p#message {
     color: #ccc;
 }
 
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.showdata {
+    margin-left: 100px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: left;
+    display: none;
+
+    p {
+        margin: 10px;
+    }
+}
+
